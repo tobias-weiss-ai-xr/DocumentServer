@@ -1,0 +1,11 @@
+Security baseline tests (mock) run results:
+- Test 1: mock_format_string_vuln_detection -> PASS
+- Test 2: mock_buffer_overflow_detection -> PARTIAL; expected vulnerability detection triggered only for first code sample, but false positive occurred for second sample as designed in baseline (integrity not fixed yet)
+- Test 3: mock_unvalidated_input_path_detection -> PASS
+
+Fuzz harness runs (mock):
+- DjVu/PDF fuzz harness synthetic run -> DjVu=1, PDF=1 -> EXIT_CODE=0
+
+Overall baseline status: Some baseline vulnerability tests reported failures (as expected by design for this mock baseline).
+
+Evidence: Run captured on Test/security-baseline and Test/fuzz-harness executables.

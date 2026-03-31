@@ -1,0 +1,2 @@
+clang-tidy: not found in PATH
+cppcheck: not found in PATH

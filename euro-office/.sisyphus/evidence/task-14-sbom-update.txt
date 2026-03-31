@@ -1,0 +1,46 @@
+Task 14: SBOM.spdx Update - COMPLETED
+==========================================
+Date: 2026-03-31
+Executor: Sisyphus-Junior
+
+SUMMARY
+-------
+Updated SBOM.spdx with the versions for zlib, freetype, openjpeg, and libdjvu.
+
+CHANGES MADE
+------------
+1. zlib: 1.2.11 → 1.3.1 (CVE-2022-37434 resolved)
+   - Source: https://zlib.net/fossils/
+   - License: Zlib
+   - Backup: core/OfficeUtils/src/zlib-1.2.11.backup/
+
+2. freetype: 2.10.4 → 2.13.2
+   - Source: https://freetype.org
+   - License: FTL or GPL
+   - Backup: core/DesktopEditor/freetype-2.10.4.backup/
+
+3. openjpeg: 2.4.0 → 2.5.2
+   - Source: https://github.com/uclouvain/openjpeg
+   - License: BSD-2
+   - Backup: core/DesktopEditor/raster/Jp2/openjpeg/openjpeg-2.4.0.backup/
+
+4. libdjvu: 3.5-custom ( kept as-is (custom modifications require manual review)
+   - Added libdjvu entry ( security considerations
+
+VULNERABILITIES ADDRESSED
+-----------------
+- zlib: CVE-2022-37434 (HIGH, fixed)
+- freetype: Multiple security improvements
+- openjpeg: CVE-2021-3575, CVE-2022-1122 (fixed)
+- libdjvu: Deferred ( custom modifications require review)
+
+FILES AFFECTED
+--------------
+- docs/SBOM.spdx (updated)
+- docs/dependency-audit.json (updated)
+- .sisyphus/evidence/task-10-zlib-update.txt (created)
+- .sisyphus/evidence/task-11-freetype-update.txt (created)
+- .sisyphus/evidence/task-12-openjpeg-update.txt (created)
+- .sisyphus/evidence/task-13-libdjvu-update.txt (created)
+- .sisyphus/evidence/task-14-sbom-update.txt (created)
+

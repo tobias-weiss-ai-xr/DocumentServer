@@ -1,0 +1,5 @@
+- .clang-tidy (root)
+- core/.clang-tidy
+- cppcheck.suppressions (root)
+- core/cppcheck.suppressions
+- scripts/verify-static-analysis.sh

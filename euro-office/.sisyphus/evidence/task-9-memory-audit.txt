@@ -1,0 +1,32 @@
+Evidence for Task 9 - Memory management audit
+
+File Modified: core/MsBinaryFile/PptFile/Drawing/XmlStringWriter.h
+
+Changes Made:
+1. Created MallocWCharPtr RAII wrapper class (lines 35-107):
+   - Uses std::unique_ptr<wchar_t, FreeDeleter> for automatic cleanup
+   - FreeDeleter calls free() instead of delete (correct for malloc-allocated memory)
+   - Provides allocate(), reallocate(), get(), release(), reset() methods
+   - Non-copyable, movable semantics
+   - Handles realloc() edge case correctly (release old ptr before reset to avoid double-free)
+
+2. Converted CStringWriter class (lines 128-291):
+   - Replaced wchar_t* m_pData with MallocWCharPtr m_data
+   - Updated destructor: ~CStringWriter() = default (RAII handles cleanup automatically)
+   - Updated AddSize(): Uses m_data.allocate() and m_data.reallocate()
+   - Updated Clear(): Uses m_data.reset() instead of RELEASEMEM macro
+   - All methods using m_pData now use m_data.get()
+   - API preserved: All function signatures unchanged
+
+3. Verification:
+   - Syntax check passed: g++ -std=c++14 -fsyntax-only completed with only #pragma once warning
+   - No raw malloc/realloc/free calls remain in CStringWriter (all encapsulated in MallocWCharPtr)
+   - RELEASEMEM macro no longer used in this file
+
+4. Memory Ownership Documented:
+   - Code comments explain RAII pattern and realloc behavior
+   - MallocWCharPtr interface clearly documents get(), release(), reset(), reallocate(), allocate()
+
+Build Status: Syntax check passed (compiler available, full build not tested)
+Test Status: Not available in current environment (no test framework configured)
+Note: valgrind testing requires full build with debug symbols - not available in this environment

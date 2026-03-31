@@ -1,0 +1,91 @@
+{
+  "active_plan": "/home/weiss/workspace/euro-office/.sisyphus/plans/documentserver-security-refactor.md",
+  "started_at": "2026-03-30T20:53:09.515Z",
+  "session_ids": [
+    "ses_2c042762bffeKO2ccgPnITwhHY",
+    "ses_2bf78b668ffeykKpc5IeH4ZG0l",
+    "ses_2bf75b0faffeV2fKAGp4751C6q",
+    "ses_2bf715021ffeT9iroBL3zyhkcR",
+    "ses_2bf6bdaa9ffeLvNQhYS5Cs3J31",
+    "ses_2bf6c3d9effeMBVEl3ugSybmEJ",
+    "ses_2bf64c9ffffeSHOjXz8bYu24xu",
+    "ses_2bf6374beffeeJESyJw63RoYdH",
+    "ses_2bf6457d0ffeIO4H02Y0g1LeBc",
+    "ses_2bf63e4e2ffeAqLmdRpDNDEnrS",
+    "ses_2bf5bc007ffeBGVK5SZSuaJcHL",
+    "ses_2bf5c71c0ffe7kkbCsCymQk27M",
+    "ses_2bf5b25baffeWrlL27SXHlw5mf",
+    "ses_2bf5a899dffeAghVKFT1uk7vcL",
+    "ses_2bf4fb088ffeNJ1DVkpLouzAfP",
+    "ses_2bf473be5ffeesj2WwZkKR2vmH",
+    "ses_2bf46d803ffextAQUmFq7SQ9va",
+    "ses_2bf403541ffe1X01OlzXRrTy1g",
+    "ses_2bf3f3cf0ffeMjsJE9JiRkn716",
+    "ses_2be00cad0ffeLHqWfOasCBSk9E",
+    "ses_2be008922ffeEWtCQUgxWeoVlp",
+    "ses_2bdee92bdffesSwlSXEEQa5ivv",
+    "ses_2bded6751ffeby9Zumbvn1Qgt5",
+    "ses_2bdeb7cacffe6MTyLzqm0rJK3p",
+    "ses_2bde763b2ffeLo5QUdE8wM1kS5",
+    "ses_2bdc9b73affeU0dCSVzIzsCrYn",
+    "ses_2bda7332dffeM8UNAvfNLdpzN4"
+  ],
+  "plan_name": "documentserver-security-refactor",
+  "agent": "atlas",
+  "task_sessions": {
+    "todo:1": {
+      "task_key": "todo:1",
+      "task_label": "1",
+      "task_title": "Setup static analysis tooling",
+      "session_id": "ses_2bf75b0faffeV2fKAGp4751C6q",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-03-30T20:59:21.815Z"
+    },
+    "todo:2": {
+      "task_key": "todo:2",
+      "task_label": "2",
+      "task_title": "Dependency audit & SBOM generation",
+      "session_id": "ses_2bf715021ffeT9iroBL3zyhkcR",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-03-30T21:07:30.632Z"
+    },
+    "todo:3": {
+      "task_key": "todo:3",
+      "task_label": "3",
+      "task_title": "Security baseline testing",
+      "session_id": "ses_2bf64c9ffffeSHOjXz8bYu24xu",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-03-30T21:18:57.092Z"
+    },
+    "todo:5": {
+      "task_key": "todo:5",
+      "task_label": "5",
+      "task_title": "Fix strcpy in GString.cpp",
+      "session_id": "ses_2bf5c71c0ffe7kkbCsCymQk27M",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-03-30T21:29:35.877Z"
+    },
+    "todo:9": {
+      "task_key": "todo:9",
+      "task_label": "9",
+      "task_title": "Memory management audit",
+      "session_id": "ses_2bf4fb088ffeNJ1DVkpLouzAfP",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-high",
+      "updated_at": "2026-03-30T21:45:02.478Z"
+    },
+    "final-wave:f1": {
+      "task_key": "final-wave:f1",
+      "task_label": "F1",
+      "task_title": "**Plan Compliance Audit** — `oracle`",
+      "session_id": "ses_2bf403541ffe1X01OlzXRrTy1g",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-high",
+      "updated_at": "2026-03-30T21:58:43.549Z"
+    }
+  }
+}

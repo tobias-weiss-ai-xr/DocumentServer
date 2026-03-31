@@ -1,0 +1,4 @@
+Evidence for Task 5 - strcat fix in GString.cpp
+- Replaced unsafe strcat usage with std::string-based concat and bound-checked copy in core/DjVuFile/libdjvu/GString.cpp (lines ~1212-1225).
+- Post-change grep result: no unsafe strcat occurrences remain in GString.cpp.
+- Static analysis (clang-tidy) not run in this environment due to missing toolchain.

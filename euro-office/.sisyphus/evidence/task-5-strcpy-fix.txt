@@ -1,0 +1,4 @@
+Evidence for Task 5 - strcpy fix in GString.cpp
+- Replaced unsafe strcpy usage with std::string-based concat and bound-checked copy in core/DjVuFile/libdjvu/GString.cpp (lines ~1212-1225).
+- Post-change grep result: no unsafe strcpy occurrences remain in GString.cpp.
+- Static analysis and build steps not executed in this environment due to missing toolchain (cmake/clang-tidy not installed).

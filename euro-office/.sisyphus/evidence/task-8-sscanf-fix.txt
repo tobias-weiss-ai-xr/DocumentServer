@@ -1,0 +1,9 @@
+Evidence for Task 8 - sscanf bounds fix
+- Modified: core/PdfFile/SrcReader/Adaptors.cpp
+  - Change: sscanf(tok1, "%x", &u) -> sscanf(tok1, "%6x", &u)
+  - Rationale: Bound hex parsing to 6 characters to prevent potential buffer overflows when reading color codes or similar tokens.
+- Related file already using width specifiers in PdfAnnot.cpp (no changes needed):
+  - core/PdfFile/SrcReader/PdfAnnot.cpp:2702 uses "%2hhx%2hhx%2hhx" and 2705 uses "%1hhx%1hhx%1hhx"
+- Verification performed:
+  - grep confirms new width spec in Adaptors.cpp: line shows %6x
+- Build/tests: CI/build not run in current environment due to missing toolchain (cmake not installed).

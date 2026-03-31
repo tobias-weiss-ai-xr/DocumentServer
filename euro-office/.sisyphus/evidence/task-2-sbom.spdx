@@ -1,0 +1,59 @@
+SPDX Software Bill of Materials
+================================
+
+Task: Task 2 - SBOM generation
+
+File: docs/SBOM.spdx (175 lines)
+
+Format: SPDX-2.2 Tag-Value
+
+Components Documented: 24 packages
+- All libraries from 3DPARTY.md included
+- PackageVersion marked as UNKNOWN where version not determinable
+- PackageDownloadLocation: NOASSERTION (source not tracked)
+- PackageLicense: NOASSERTION (license review pending)
+
+SBOM Structure:
+- SPDXVersion: SPDX-2.2
+- DataLicense: CC0-1.0
+- DocumentName: SBOM.spdx
+- DocumentNamespace: http://example.org/spdxdocs/documentserver-security-20260330
+- Creator: Tool: OpenCode SBOM Generator
+- Created: 2026-03-30T00:00:00Z
+
+Packages Included (1-24):
+1. apple (headers)
+2. boost (UNKNOWN)
+3. brotli (UNKNOWN)
+4. cef (UNKNOWN)
+5. cryptopp (UNKNOWN)
+6. curl (UNKNOWN)
+7. glew (UNKNOWN)
+8. googletest (UNKNOWN)
+9. harfbuzz (UNKNOWN)
+10. heif (UNKNOWN)
+11. html (UNKNOWN)
+12. hunspell (UNKNOWN)
+13. hyphen (UNKNOWN)
+14. icu (UNKNOWN)
+15. ixwebsocket (UNKNOWN)
+16. libvlc (UNKNOWN)
+17. md (UNKNOWN)
+18. misc (UNKNOWN)
+19. openssl (UNKNOWN)
+20. pole (UNKNOWN)
+21. socketio (UNKNOWN)
+22. socketrocket (UNKNOWN)
+23. v8 (UNKNOWN)
+24. v8_89 (UNKNOWN)
+
+Validation:
+- SPDX format validated (syntax correct)
+- All required fields present
+- Note: Version data incomplete - requires actual dependency-check scan
+
+Next Steps:
+- Run OWASP Dependency-Check to populate actual versions
+- Update SBOM with accurate version numbers
+- Add license information for each component
+- Document download locations/source repositories

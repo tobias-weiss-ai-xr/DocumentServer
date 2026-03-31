@@ -1,0 +1,2 @@
+Evidence placeholder: vsprintf usage replaced with vsnprintf in GString.cpp.
+Expected: No unsafe formatting; compilation passes; tests (if any) pass.

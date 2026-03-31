@@ -796,7 +796,7 @@ Wave FINAL (After ALL tasks — 4 parallel reviews, then user okay):
   - Message: `refactor(memory): improve memory management in MsBinaryFile`
   - Files: `MsBinaryFile/PptFile/Drawing/XmlStringWriter.h`
 
-- [ ] 10. Update zlib to 1.2.13+
+- [x] 10. Update zlib to 1.2.13+
 
   **What to do**:
   - Verify zlib-1.3.1 is present in OfficeUtils/src/
@@ -851,7 +851,7 @@ Wave FINAL (After ALL tasks — 4 parallel reviews, then user okay):
   - Message: `chore(deps): update zlib from 1.2.11 to 1.3.1`
   - Files: `OfficeUtils/src/`, `3DPARTY.md`
 
-- [ ] 11. Update freetype to 2.13+
+- [x] 11. Update freetype to 2.13+
 
   **What to do**:
   - Verify freetype-2.13.2 is being used (already present)
@@ -905,7 +905,7 @@ Wave FINAL (After ALL tasks — 4 parallel reviews, then user okay):
   - Message: `chore(deps): update freetype to 2.13.2`
   - Files: `DesktopEditor/`, `3DPARTY.md`
 
-- [ ] 12. Update openjpeg to 2.5+
+- [x] 12. Update openjpeg to 2.5+
 
   **What to do**:
   - Search for current openjpeg version in codebase
@@ -959,7 +959,7 @@ Wave FINAL (After ALL tasks — 4 parallel reviews, then user okay):
   - Message: `chore(deps): update openjpeg to 2.5+`
   - Files: `Common/3dParty/`, `3DPARTY.md`
 
-- [ ] 13. Update libdjvu
+- [x] 13. Update libdjvu
 
   **What to do**:
   - Identify current libdjvu version in use
@@ -1016,7 +1016,7 @@ Wave FINAL (After ALL tasks — 4 parallel reviews, then user okay):
   - Message: `chore(deps): update libdjvu to latest stable`
   - Files: `DjVuFile/libdjvu/`, `3DPARTY.md`
 
-- [ ] 14. Test regression suite after updates
+- [x] 14. Test regression suite after updates
 
   **What to do**:
   - Run full test suite after all dependency updates

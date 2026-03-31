@@ -1075,7 +1075,7 @@ Wave FINAL (After ALL tasks — 4 parallel reviews, then user okay):
 
 ## Wave 4: Refactoring (Tasks 15-19)
 
-- [ ] 15. Design converter interface
+- [x] 15. Design converter interface
 
   **What to do**:
   - Analyze ASCOfficeDrawingConverter to identify responsibilities
